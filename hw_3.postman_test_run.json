@@ -1,0 +1,301 @@
+{
+	"id": "158bf13c-c963-4dbc-818b-ac8c737caa49",
+	"name": "hw_3",
+	"timestamp": "2022-02-11T07:33:33.584Z",
+	"collection_id": "18777152-0ea638e6-03ac-4e8b-ad6d-2f2e3a978b45",
+	"folder_id": 0,
+	"environment_id": "3a40e6b8-5fe9-4009-b01b-34d6fe3f0c27",
+	"totalPass": 19,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "614e5b9f-f59f-47d5-a412-08d1f60d2b40",
+			"name": "Login",
+			"url": "http://162.55.220.72:5005/login",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				80
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "daf62ce5-424d-47fe-9681-bfce234922c2",
+			"name": "user_info",
+			"url": "http://162.55.220.72:5005/user_info",
+			"time": 88,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Verify status code 200": true,
+				"Schema is valid": true,
+				"whether is qa_salary_after_6_months is equal salary*2": true
+			},
+			"testPassFailCounts": {
+				"Verify status code 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"whether is qa_salary_after_6_months is equal salary*2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				88
+			],
+			"allTests": [
+				{
+					"Verify status code 200": true,
+					"Schema is valid": true,
+					"whether is qa_salary_after_6_months is equal salary*2": true
+				}
+			]
+		},
+		{
+			"id": "5be54a35-9a90-4852-9a8f-c734438d19bb",
+			"name": "new_data",
+			"url": "http://162.55.220.72:5005/new_data",
+			"time": 100,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true,
+				"Request salary  is equal 1st element of response salary ": true,
+				"Request salary *2 is equal 2d element of response salary": true,
+				"Request salary *3 is equal 3d element of response salary": true,
+				"Whether Response 2nd element of salary more than 1st one": true,
+				"Whether Response 2nd element of salary more than zero element": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request salary  is equal 1st element of response salary ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request salary *2 is equal 2d element of response salary": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Request salary *3 is equal 3d element of response salary": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Whether Response 2nd element of salary more than 1st one": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Whether Response 2nd element of salary more than zero element": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				100
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true,
+					"Request salary  is equal 1st element of response salary ": true,
+					"Request salary *2 is equal 2d element of response salary": true,
+					"Request salary *3 is equal 3d element of response salary": true,
+					"Whether Response 2nd element of salary more than 1st one": true,
+					"Whether Response 2nd element of salary more than zero element": true
+				}
+			]
+		},
+		{
+			"id": "15a3ec8a-5983-4da8-bf16-0c213e5ea997",
+			"name": "test_pet_info",
+			"url": "http://162.55.220.72:5005/test_pet_info",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true,
+				"Is the result of multiplying weight by a factor is equal daily_food": true,
+				"Is the result of multiplying weight by a factor is equal daily_sleep": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Is the result of multiplying weight by a factor is equal daily_food": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Is the result of multiplying weight by a factor is equal daily_sleep": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true,
+					"Is the result of multiplying weight by a factor is equal daily_food": true,
+					"Is the result of multiplying weight by a factor is equal daily_sleep": true
+				}
+			]
+		},
+		{
+			"id": "b2558e34-16ff-4f43-ae97-88d7aecdecc1",
+			"name": "get_test_user",
+			"url": "http://162.55.220.72:5005/get_test_user",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "713e2d4a-d5ee-4315-8cfa-ddbebdcac408",
+			"name": "currency",
+			"url": "http://162.55.220.72:5005/currency",
+			"time": 523,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				523
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "bcd0004b-5526-41c4-9dd3-204eb45925e7",
+			"name": "curr_byn",
+			"url": "http://162.55.220.72:5005/curr_byn",
+			"time": 289,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Schema is valid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Schema is valid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Schema is valid": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1259,
+	"collection": {
+		"requests": [
+			{
+				"id": "614e5b9f-f59f-47d5-a412-08d1f60d2b40",
+				"method": "POST"
+			},
+			{
+				"id": "daf62ce5-424d-47fe-9681-bfce234922c2",
+				"method": "POST"
+			},
+			{
+				"id": "5be54a35-9a90-4852-9a8f-c734438d19bb",
+				"method": "POST"
+			},
+			{
+				"id": "15a3ec8a-5983-4da8-bf16-0c213e5ea997",
+				"method": "POST"
+			},
+			{
+				"id": "b2558e34-16ff-4f43-ae97-88d7aecdecc1",
+				"method": "POST"
+			},
+			{
+				"id": "713e2d4a-d5ee-4315-8cfa-ddbebdcac408",
+				"method": "POST"
+			},
+			{
+				"id": "bcd0004b-5526-41c4-9dd3-204eb45925e7",
+				"method": "POST"
+			}
+		]
+	}
+}
